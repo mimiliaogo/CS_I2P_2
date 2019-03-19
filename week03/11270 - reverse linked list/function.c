@@ -44,19 +44,14 @@ Node* createList()
 //    return head;
 //}
 
-Node* reverse(Node* p)//recursion
+Node* reverse(Node* p)
 {
     Node* head;
     Node* cur;
-    if (p==NULL) return NULL;
-    else if (p->next==NULL) return p;
+    if (p->next==NULL) return p;
     else {
+        cur = p->next;
         head = reverse(p->next);
-
-        cur = head;
-        while (cur->next!=NULL) {
-            cur = cur->next;
-        }
         cur->next = p;
         p->next = NULL;
     }

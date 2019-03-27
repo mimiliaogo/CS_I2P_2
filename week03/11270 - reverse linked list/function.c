@@ -2,31 +2,43 @@
 #include <stdlib.h>
 #include "function.h"
 
-
 Node* createList()
 {
-    Node *np, *cur;
-    Node* head = NULL;
-    int val;
-
-    while (1) {
-        scanf("%d", &val);
-        if (val==-1) break;
-        np = (Node*) malloc(sizeof(Node));
-        np->data = val;
-        np->next = NULL;
-        if (head==NULL) {
-            head = np;
-            cur = head;
-        }
-        else {
-            cur->next = np;
-            cur = cur->next;
-        }
-    }
+        int data;
+    Node* head;
+    scanf("%d", &data);
+    if (data==-1) return NULL;//stop
+    head = (Node*) malloc(sizeof(Node));
+    head->data = data;
+    head->next = createList();
     return head;
 
+
 }
+//Node* createList()
+//{
+//    Node *np, *cur;
+//    Node* head = NULL;
+//    int val;
+//
+//    while (1) {
+//        scanf("%d", &val);
+//        if (val==-1) break;
+//        np = (Node*) malloc(sizeof(Node));
+//        np->data = val;
+//        np->next = NULL;
+//        if (head==NULL) {
+//            head = np;
+//            cur = head;
+//        }
+//        else {
+//            cur->next = np;
+//            cur = cur->next;
+//        }
+//    }
+//    return head;
+//
+//}
 //Node* reverse(Node* head)
 //{
 //    Node* cur;
@@ -48,6 +60,7 @@ Node* reverse(Node* p)
 {
     Node* head;
     Node* cur;
+    if (p==NULL) return NULL;
     if (p->next==NULL) return p;
     else {
         cur = p->next;

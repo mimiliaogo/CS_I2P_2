@@ -3,10 +3,10 @@
 #include "function.h"
 void printNode(Node* head)//the function which will print the output
 {
-    if (head==NULL) return;//to the tail of the list
+    if (head==NULL) return;
     else {
         if (head->data!=0) {
-            printf(" %ld %d", head->data, head->power);
+            printf("%ld %d ", head->data, head->power);
         }
         printNode(head->next);
     }
@@ -42,38 +42,34 @@ void destroy(Node *node)//destroy polynomial linked list
 
 Node* multiple(Node* p1, Node* p2) //input two polynomial linked list and return the result
 {
+    int data, power;
+    Node* p3=NULL;
     Node* t1, *t2, *t3, *t4;
-    Node* p3 = NULL;
-    int power, data;
     for (t1=p1; t1!=NULL; t1 = t1->next) {
         for (t2=p2; t2!=NULL; t2 = t2->next) {
-            data = (t1->data) * (t2->data);
-            power = t1->power + t2->power;
-            //insert the result to p3
-            if (p3==NULL) {
-                p3 = makeNode(data, power);
-            } else {//p3!=NULL
+            data = t1->data*t2->data;
+            power = t2->power+t1->power;
+            if (p3==NULL) p3 = makeNode(data, power);
+            else {
                 for (t3=p3; t3!=NULL; t3 = t3->next) {
                     if (t3->power==power) {
-                        t3->data+=data;
+                        t3->data +=data;
                         break;
                     }
-                    else if (t3->power<power) {//insert before t3
+                    else if (t3->power<power) {
                         t4 = makeNode(data, power);
-                        t4->prev = t3->prev;
+
                         t4->next = t3;
-                        if (t3->prev!=NULL) {//t3!=head
-                            t3->prev->next = t4;
-                        }
+                        t4->prev = t3->prev;
+                        if (t3->prev!=NULL) t3->prev->next = t4;
                         t3->prev = t4;
                         break;
                     }
-                    else {//t3->power>power
-                        //do nothing unless it is the end
+                    else {
                         if (t3->next==NULL) {
                             t4 = makeNode(data, power);
-                            t4->prev = t3;
                             t3->next = t4;
+                            t4->prev = t3;
                             break;
                         }
                     }

@@ -7,19 +7,15 @@ typedef struct _node {
     struct _node* prev;
 } Node;
 int NB;
-Node* createList(int data) {
-    Node* head;
-	head =  (Node*) malloc(sizeof(Node));
+Node* createList(int data) {//dll list
+    Node* head= (Node*) malloc(sizeof(Node));
     head->data = data;
-	head->prev = NULL;
-	head->next = NULL;
-    if (data==NB-1) return head;
-
-	head->next = createList(data+1);
-	head->next->prev = head;
-	return head;
-
-
+    head->prev = NULL;
+    head->next = NULL;
+    if (data==NB-1)  return head;
+    head->next = createList(data+1);
+    head->next->prev = head;
+    return head;
 }
 void showNode(Node* head) {
     Node* tmp;
@@ -28,74 +24,53 @@ void showNode(Node* head) {
     }
     printf("\n");
 }
-Node* removeNode(Node* head, int data) {
-    Node *tmp;
-    tmp = head;
-
-    while (tmp->data!=data && tmp->next!=NULL) tmp = tmp->next;
-    if (tmp->data!=data) return head;
-
-    //now tmp is the node we want to remove
-    if (tmp==head&&tmp->next==NULL) {//only one node
-        head = NULL;
-    }
-    else if (tmp==head) {//remove head
-        tmp->next->prev = NULL;
-        head = tmp->next;
-    } else if (tmp->next==NULL) {//remove the least
-        tmp->prev->next = NULL;
-    } else {
-        tmp->prev->next = tmp->next;
-        tmp->next->prev = tmp->prev;
-    }
-    free(tmp);
-    return head;
-
-}
-Node* moveA(Node* head, Node* A)
+Node* moveA(Node* head, Node* A)//take out A from the list
 {
-    if (A==head) {//remove head
-        A->next->prev = NULL;
-        head = A->next;
-    } else if (A->next==NULL) {//remove the least
-        A->prev->next = NULL;
-    } else {
+    if (A->prev==NULL&&A->next==NULL) return NULL;
+    if (A==head) {
+        head->next->prev = NULL;
+        head = head->next;
+    }
+    else {
         A->prev->next = A->next;
-        A->next->prev = A->prev;
+        if (A->next!=NULL) A->next->prev = A->prev;
     }
     return head;
-
 }
+Node* removeNode(Node* head, int data) {
+    if (head==NULL) return NULL;
+    Node* cur = head;
+    while (cur->data!=data && cur->next!=NULL) cur = cur->next;
+    if (cur->data!=data) return head;
+    head = moveA(head, cur);
+    free(cur);
+    return head;
+}
+
 Node* beforeB(Node* head, Node* A, Node* B)
 {
     if (B==head) {
-        A->prev = NULL;
-        A->next = head;
         head->prev = A;
+        A->next = head;
         head = A;
-    } else {
-        A->prev = B->prev;
+    }
+    else {
         A->next = B;
+        A->prev = B->prev;
         B->prev->next = A;
         B->prev = A;
     }
-
     return head;
 }
-void afterB(Node* A, Node* B)
+Node* afterB(Node* head, Node* A, Node* B)
 {
-    if (B->next==NULL) {//at the least
+    if (B->next==NULL) {//the last one
         B->next = A;
+        A->prev = B;
         A->next = NULL;
-        A->prev = B;
-    } else {
-        A->prev = B;
-        A->next = B->next;
-        B->next->prev = A;
-        B->next = A;
     }
-
-
+    else head = beforeB(head, A, B->next);
+    return head;
 }
 
 Node* moveAonB(Node* head, int a, int b) {
@@ -106,7 +81,7 @@ Node* moveAonB(Node* head, int a, int b) {
     while (B->data!=b && B->next!=NULL) B = B->next;
     if (A->data!=a||B->data!=b) return head;
     head = moveA(head, A);
-    afterB(A, B);
+    head = afterB(head, A, B);
     return head;
 }
 Node* moveAunderB(Node* head, int a, int b) {
@@ -126,8 +101,6 @@ int main()
     int a, b;
     int del;
     Node* head = NULL;
-
-
     scanf("%d", &NB);
     head = createList(0);
     while (1) {

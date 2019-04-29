@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Documents/GitHub/CS_I2P_2/1666 - I2P(II)2019_Lee_HW6/11933 - Vector Dot/11933.h
+iostream
+-
+
+C:/Users/user/Documents/GitHub/CS_I2P_2/1666 - I2P(II)2019_Lee_HW6/11933 - Vector Dot/11933_impl.cpp
+iostream
+-
+11933.h
+C:/Users/user/Documents/GitHub/CS_I2P_2/1666 - I2P(II)2019_Lee_HW6/11933 - Vector Dot/11933.h
+

@@ -1,28 +1,18 @@
-/*
-constructor
-destructor
-int kill();
-void generatecircularlinkedList(const int &);
-void generateFib(const int &);
-*/
 #include <iostream>
+#include <cstring>
 #include "10996_include.h"
 using namespace std;
 Josephus::Josephus()//default constructor
 {
     noOfPeople = 0;
-    for (int i=0; i<50; i++) {
-        sequence[i] = 0;
-    }
+    memset(sequence, 0, sizeof(sequence));
     head = nullptr;
 }
 Josephus::Josephus(const int &n)
 {
     noOfPeople = n;
-    for (int i=0; i<50; i++) {
-        sequence[i] = 0;
-    }
-    head = nullptr;
+    generateFib(n);
+    generatecircularlinkedList(n);
 }
 Josephus::~Josephus()
 {
@@ -30,49 +20,43 @@ Josephus::~Josephus()
     head = nullptr;
 }
 int Josephus::kill() {
-    if (noOfPeople<=0) return 0;
-    generatecircularlinkedList(noOfPeople);
-    generateFib(noOfPeople);
-
-    Node* tmp;
-    int cnt=0, i=0;
-
-    for (tmp=head; tmp->next!=head; tmp = tmp->next);//the tail
-    while (head->next!=head) {
-        sequence[i]--;//since I let the start position move back
-        if (sequence[i]>=noOfPeople) sequence[i] = (sequence[i])%noOfPeople;
-        for (cnt=0; cnt<sequence[i]; cnt++) {
-            tmp = head;
-            head = head->next;
-        }
-        tmp->next = head->next;
-        delete head;
-        noOfPeople--;
-        head = tmp->next;
+    Node* cur=head, *killnode=nullptr;
+    int i=0, step;
+    while (cur->next!=head) cur = cur->next;
+    while (cur->next!=cur) {
+        step = (sequence[i]-1)%noOfPeople;
         i++;
-    }
+        for (;step>0; step--) cur = cur->next;
 
-    return head->number;
+        killnode = cur->next;
+        cur->next = killnode->next;
+        delete killnode;
+        noOfPeople--;
+    }
+    head = cur;
+    return cur->number;
+
 }
 void Josephus::generatecircularlinkedList(const int & n) // generate circular linked-list
 {
-    int id;
-    Node* prev=nullptr;
+    int i=2;
     head = new Node(1);
-    prev = head;
-    for (id=2; id<=n; id++) {
-        prev->next = new Node(id);
-        prev = prev->next;
+    Node*cur = head;
+    while (i<=n) {
+        cur -> next = new Node(i);
+        cur = cur->next;
+        i++;
     }
-    prev->next = head;
+    //cur == tail
+    cur->next = head;
+
 }
 void Josephus::generateFib(const int & n)
 {
-    if (n<2) {
+    if (n<=1) {
         sequence[0] = 1;
         sequence[1] = 1;
-    }
-    else {
+    } else {
         generateFib(n-1);
         sequence[n] = sequence[n-1] + sequence[n-2];
     }

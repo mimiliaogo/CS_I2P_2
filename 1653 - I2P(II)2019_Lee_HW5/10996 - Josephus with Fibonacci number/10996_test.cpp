@@ -3,11 +3,10 @@
 using namespace std;
 int main(){
 	int numofpeople;
-    int k=3;
+
 	while(cin>>numofpeople){
 		Josephus Jose(numofpeople);
 		int survival = Jose.kill();
 		cout<<survival<<endl;
     }
-
 }

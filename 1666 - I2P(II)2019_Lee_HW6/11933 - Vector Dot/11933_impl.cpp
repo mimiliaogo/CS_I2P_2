@@ -1,7 +1,6 @@
 //
 // Created by user on 4/27/2019.
 //
-
 #include <iostream>
 #include "11933.h"
 using namespace std;
@@ -14,10 +13,8 @@ const int Vector::operator[](int index) const
 int Vector::operator*(const Vector& a)
 {
     int dot=0;
-    int size = v_size;
-    while (size!=0) {
-        dot+=a.v[size-1]*this->v[size-1];
-        size--;
+    for (int i=0; i<v_size; i++) {
+        dot+=v[i]*a.v[i];
     }
     return dot;
 }

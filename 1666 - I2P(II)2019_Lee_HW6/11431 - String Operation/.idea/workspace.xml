@@ -12,30 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d86fa2b3-c475-4430-bfbd-a84b5e3fa5de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11431_impl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Class_cpp/Array/Array.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Class_cpp/Array/Array.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Class_cpp/Array/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/Josephus_CircularLinkedList.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg3.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg4.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg5.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Josephus_Algorithm/alg6.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Sorting/Bubble+Insertion.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Sorting/BubbleSort.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Sorting/InsertionSort.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/BinaryAllCombination.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/construct.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/findMax.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/in2preV1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/in2preV2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/parenthesis_matching (1).c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/Tree&amp;Parse/preorder (1).c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/doubly linked list/dl_list.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Materials/doubly linked list/dll.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_impl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_impl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11933 - Vector Dot/11933_impl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../11933 - Vector Dot/11933_impl.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/11431.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="490">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -59,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/11431_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="300">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -68,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/11431_impl.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+            <state relative-caret-position="247">
+              <caret line="46" column="16" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
@@ -104,10 +83,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="921" />
-    <option name="height" value="1091" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-13" />
+    <option name="width" value="923" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,7 +115,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,11 +155,12 @@
       <workItem from="1556340479846" duration="345000" />
       <workItem from="1556341389267" duration="1437000" />
       <workItem from="1556374223260" duration="1558000" />
+      <workItem from="1556542945843" duration="707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3340000" />
+    <option name="totallyTimeSpent" value="4047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,7 +172,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1041" height="631" extended-state="6" />
+    <frame x="-7" y="-7" width="1041" height="631" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03051882" />
@@ -200,7 +180,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.06" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -222,9 +202,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/11431___String_Operation.cbp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -232,19 +209,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/11431_impl.cpp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/11431___String_Operation.cbp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11431.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="490">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/11431_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="300">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -252,10 +229,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/11431.h">
+    <entry file="file://$PROJECT_DIR$/11431_impl.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="247">
+          <caret line="46" column="16" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="46" selection-end-column="16" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

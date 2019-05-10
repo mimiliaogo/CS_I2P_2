@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d86fa2b3-c475-4430-bfbd-a84b5e3fa5de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_impl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_impl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../1653 - I2P(II)2019_Lee_HW5/10996 - Josephus with Fibonacci number/10996_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11933 - Vector Dot/11933_impl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../11933 - Vector Dot/11933_impl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/ipch/620c8de33d35dd95/MAIN.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vscode/ipch/620c8de33d35dd95/MAIN.ipch" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +48,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/11431_impl.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="300">
               <caret line="46" column="16" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
@@ -173,14 +171,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1041" height="631" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03051882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,7 +228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/11431_impl.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="300">
           <caret line="46" column="16" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="e#39#58#0" expanded="true" />

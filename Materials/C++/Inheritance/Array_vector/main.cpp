@@ -21,15 +21,15 @@ int main()
 {
     int i;
     try {
-        Array *A[3];
-        A[0] = new Vector(1);
-        A[1] = new Array(2);
-        A[2] = new Vector(3);
-
+//        Array *A[3];
+//        A[0] = new Vector(1);
+//        A[1] = new Array(2);
+//        A[2] = new Vector(3);
+        /*
         for (i=0;i<3;i++)
             testSetSize(*A[i]);
+        */
 
-        /*
         Vector A(3);
 
         for(i=0; i<3; i++)
@@ -44,7 +44,7 @@ int main()
             A.setElementAt(i, i);
 
         A.print();
-*/
+
     } catch (const char *s) {
         cout << s << endl;
         cout <<"error message"<< endl;

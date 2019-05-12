@@ -3,7 +3,7 @@
 #include<ctime>
 #include<iostream>
 #include<string>
-#include"function.h"
+#include"11410_function.h"
 #ifdef ONLINE_JUDGE
 #include"NTHUOJLock"
 #endif
@@ -12,10 +12,10 @@ namespace oj
 {
 	Int::Int()
 		:val(0){}	//set val as 0
-	
+
 	Int::Int(const int val_)
 		:val(val_){}
-	
+
 	Int::Int(const Int &rhs)
 		:val(rhs.val){}	//copy from rhs.val
 
@@ -35,6 +35,7 @@ namespace oj
 
 int main()
 {
+//    freopen("test.txt", "r", stdin);
 	using namespace std;
 	srand(time(NULL));
 	{

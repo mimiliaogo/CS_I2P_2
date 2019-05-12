@@ -50,10 +50,10 @@ namespace oj
 		pointer last_;	//end of current element
 	public:
 		Vector();
-		
+
 		size_type capacity() const;
 		size_type size() const;
-		
+
 		//ignore the keyword "inline"
 		//operator[] makes Vector like a C-array, for example
 		//int a[2]{2,1};
@@ -70,14 +70,14 @@ namespace oj
 		{
 			return begin_[pos];
 		}
-		
+
 		void pop_back();
 		void push_back(value_type val);
 		void insert(size_type pos,size_type count,value_type val);
-		
+
 		void reserve(size_type new_capacity);
 		void resize(size_type new_size);
-		
+
 		~Vector();
 	};
 

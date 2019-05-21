@@ -2,7 +2,7 @@
 #include "LinkedList.h"
 
 using namespace std;
-using namespace I2P2017;
+using namespace I2P;
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
             cout << iter->currentItem() << " ";
         }
         cout << endl;
-        cout << iter->currentItem() << endl;
+//        cout << iter->currentItem() << endl;
 
     } catch (const char* s) {
         cout << s;

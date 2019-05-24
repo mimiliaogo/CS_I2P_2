@@ -5,7 +5,7 @@
 #include "Array.h"
 
 using namespace std;
-using namespace I2P2017;
+using namespace I2P;
 
 template<class CType>
 Array<CType>::Array()      // default constructor

@@ -21,7 +21,7 @@ struct Node
 class Iterator
 {
 public:
-    Node *data;
+    void *data;
 
     Iterator(Node *);
     Iterator(const Iterator &other);

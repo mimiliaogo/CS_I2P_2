@@ -74,6 +74,7 @@ void getLevelInfo(Node* root, int level, int *count, int *sum){
 }
 
 int main(void){
+
     int m, nlvl, i, lvl;
     Node* root=NULL;
     int *count=NULL, *sum=NULL;

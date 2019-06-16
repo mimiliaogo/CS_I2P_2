@@ -64,6 +64,7 @@ int GetMax(Node* root)
 }
 int main()
 {
+
     int N, data;
     int cmdn;
     char cmd[20];

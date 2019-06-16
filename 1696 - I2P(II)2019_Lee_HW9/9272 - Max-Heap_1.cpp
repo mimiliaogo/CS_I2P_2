@@ -15,9 +15,9 @@ int main()
         if (cmd=="PUSH") {
             cin >> i;
             v.push_back(i);
-            push_heap(v.begin(), v.end());
+            push_heap(v.begin(), v.end(), less<int>());
         } else if (cmd=="POP") {
-            pop_heap(v.begin(), v.end());
+            pop_heap(v.begin(), v.end(), less<int>());
             v.pop_back();
         } else if (cmd=="TOP") {
             if (v.begin()!=v.end())
